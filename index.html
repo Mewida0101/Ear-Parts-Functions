@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>نشاط التوصيل بالخطوط</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+  <div class="header">
+    <p>
+      صل كل من أجزاء الأذن المختلفة في العمود الأول بوظيفتها في العمود الثاني
+    </p>
+  </div>
+  <div class="container">
+    <canvas id="connectionsCanvas"></canvas>
+    <canvas id="tempCanvas"></canvas>
+
+    <div class="column" id="rightColumn">
+      <div class="colHead">جزء الأذن</div>
+      <div class="item item1" data-match="1">الصيوان</div>
+      <div class="item item1" data-match="2">قناة الأذن</div>
+      <div class="item item1" data-match="3">طبلة الأذن</div>
+      <div class="item item1" data-match="4">المطرقة والسندان والركاب</div>
+      <div class="item item1" data-match="5">القوقعة</div>
+      <div class="item item1" data-match="6">القنوات الهلالية</div>
+      <div class="item item1" data-match="7">العصب السمعي</div>
+    </div>
+    <div class="column" id="leftColumn">
+      <div class="colHead">الوظيفة</div>
+      <div class="item item2" data-match="3">تحول الموجات الصوتية إلى اهتزازات وتنقلها إلى الأذن الوسطى</div>
+      <div class="item item2" data-match="5">تقوم بتحويل الاهتزازات إلى إشارات كهربائية ونقلها إلى العصب السمعي</div>
+      <div class="item item2" data-match="4">تعمل على تضخيم الاهتزازات أكثر ونقلها إلى الأذن الداخلية</div>
+      <div class="item item2" data-match="7">ينقل الإشارات العصبية الصادرة من القوقعة والقنوات الهلالية إلى مركزي السمع والتوازن في الدماغ</div>
+      <div class="item item2" data-match="6">ثلاثة أنابيب مملوءة بسائل، مشكلة فيما بينها بزاوية قائمة استشعار الحركة في الثلاث جهات</div>
+      <div class="item item2" data-match="1">يقوم بتجميع الموجات الصوتية من الهواء وتوجيهها إلى قناة الأذن
+      </div>
+      <div class="item item2" data-match="2">تُضَخِم الموجات الصوتية وتُوجِّهها إلى طبلة الأذن</div>
+    </div>
+
+  </div>
+
+  <button id="checkButton">تحقق من الإجابات</button>
+  <button id="resetButton">إعادة ضبط</button>
+
+  <div class="score-container">
+    Score: <span id="scoreDisplay">0/10</span>
+  </div>
+
+  <script src="JS/script.js"></script>
+</body>
+
+</html>
